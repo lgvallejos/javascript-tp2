@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TP 2</title>
+</head>
+<body>
+
+    <script>
+        var diausuario = prompt("ingrese un día de la semana")
+        //ejercicio dias habiles o feriados
+        var dias = ["Lunes", "Martes","Sábado", "Miércoles", "Jueves", "Viernes", "Domingo"];
+        var existe = false;
+
+        for (i in dias) {
+
+          if (diausuario.toLowerCase() == dias[i].toLowerCase()) {
+
+          existe = true;
+
+          if (diausuario.toLowerCase() == "sábado" || diausuario.toLowerCase() == "domingo" ) {
+
+              console.log(diausuario + " es feriado");
+          }
+          else {
+
+            console.log(diausuario + " es hábil");
+          }
+
+          break;
+        }
+
+        
+      }
+
+      if (!existe) {console.log("El día ingresado no existe!!!")}
+
+
+    </script>
+</body>
+</html>
